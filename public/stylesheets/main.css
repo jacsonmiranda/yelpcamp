@@ -1,0 +1,16 @@
+.img-thumbnail img {
+    width: 100%;
+}
+
+.img-thumbnail {
+    padding: 0;
+    margin-top: 10px;
+}
+
+.img-thumbnail .caption {
+    padding: 9px;
+}
+
+#deleteForm {
+    display: inline;
+}
