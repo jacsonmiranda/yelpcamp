@@ -20,7 +20,8 @@ var commentsRoutes   = require("./routes/comments"),
 //mongoose.connect("mongodb://localhost/yelp_camp");
 //mongoose.connect("mongodb://localhost:27017/yelp_camp_12_Deployed", { useNewUrlParser: true });
 //mongoose.connect('mongodb://jacsonmiranda:Jacson123@ds113495.mlab.com:13495/yelpcampdatabase', { useNewUrlParser: true });
-mongoose.connect(process.env.DATABASEURL);//DATABASEURL === mongodb://localhost:27017/yelp_camp_12_Deployed
+var url = process.env.DATABASEURL || "mongodb://localhost:27017/yelp_camp_12_Deployed"
+mongoose.connect(url);//DATABASEURL === mongodb://localhost:27017/yelp_camp_12_Deployed
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine","ejs");
