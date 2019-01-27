@@ -14,3 +14,14 @@
 #deleteForm {
     display: inline;
 }
+
+#login, #signup {
+    font-family: sans-serif;
+    text-align: center;
+    width: 400px;
+    margin-top: 44px;
+}
+
+#button {
+    width: 99px;
+}

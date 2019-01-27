@@ -1,11 +1,16 @@
 <% include ./partials/header %>
 
-<h1>Sign up!</h1>
-
-<form action="/register" method="POST">
-    <input type="text" name="username" placeholder="username">
-    <input type="password" name="password" placeholder="password">
-    <button>Sign up</button>
-</form>
+<div class="container rounded-6 shadow-lg p-3 mb-5 bg-white rounded" id="signup">  
+    <h2>Sign Up</h2>
+    <form action="/register" method="POST">
+        <div class="form-group text-center">
+            <input type="text" name="username" class="form-control" placeholder="Username">
+        </div>
+        <div class="form-group">
+            <input type="password" name="password" class="form-control" placeholder="Password">
+        </div>  
+        <input type="submit" id"button" class="btn btn-primary" value="Sign Up">
+    </form>
+</div>
 
 <% include ./partials/footer %>
